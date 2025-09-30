@@ -1,29 +1,31 @@
-# Raylib-CPP-Starter-Template-for-VSCODE-V2
-Raylib C++ Starter Template for Visual Studio Code on Windows.
-This demo project contains a bouncing ball raylib example program.
-It works with raylib version 5.0. Tested on both Windows 10 and Windows 11.
+# Monte Carlo Dart Simulation 🎯
 
-# How to use this template
-1. Double click on the main.code-workspace file. This will open the template in VS Code.
-2. From the Explorer Window of VS Code navigate to the src folder and double click on the main.cpp file.
-3. Press F5 on the keyboard to compile and run the program.
+A simple, visual simulation of the **Monte Carlo method** to estimate the value of π (pi), using **C++** and **raylib**. Darts are randomly "thrown" into a square board, and the ratio of darts that land inside the circle vs the total is used to approximate π.
 
-# What's changed
-The template now uses folders for better organizion of the files. So, all the source code now lives in the src folder.
+> Visual + educational = fun!
 
-# Video Tutorial
+---
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="800">
-</p>
+## 🔧 Features
 
-<p align="center">
-🎥 <a href="https://www.youtube.com/watch?v=PaAcVk5jUd8">Video Tutorial on YouTube</a>
-</p>
+- Uses the **Monte Carlo method** to approximate π
+- Real-time graphical output using **raylib**
+- Darts are drawn incrementally — watch π converge visually!
+- Colored dart hits: 🟢 = inside circle, 🔴 = outside
+- Progress bar, π estimate, error display
+- Rendered using a persistent render texture for performance and visual clarity
 
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="http://www.programmingwithnick.com">My Website</a> | <br>
-</p>
+---
+
+## 📷 Preview
+
+![preview](preview.jpg)
+
+---
+
+## 🧠 How it works
+
+1. A circle is inscribed inside a square.
+2. Random "dart" coordinates are generated within the square.
+3. If the dart falls inside the circle, it's a "hit".
+4. The ratio of hits to total darts approximates π:
