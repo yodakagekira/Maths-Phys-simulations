@@ -10,8 +10,8 @@ bool inCircle(uint16_t dart_x, uint16_t dart_y, int screen_width, int screen_hei
 }
 
 int main() {
-    const int screen_width = 400;
-    const int screen_height = 400;
+    const int screen_width = 800;
+    const int screen_height = 800;
 
     uint32_t finished = 0;
     float pi {};
@@ -104,3 +104,4 @@ int main() {
     CloseWindow();
     return 0;
 }
+
