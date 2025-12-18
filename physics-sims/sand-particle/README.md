@@ -1,29 +1,48 @@
-# Raylib-CPP-Starter-Template-for-VSCODE-V2
-Raylib C++ Starter Template for Visual Studio Code on Windows.
-This demo project contains a bouncing ball raylib example program.
-It works with raylib version 5.0. Tested on both Windows 10 and Windows 11.
+# Falling Sand Simulation (raylib, C++)
 
-# How to use this template
-1. Double click on the main.code-workspace file. This will open the template in VS Code.
-2. From the Explorer Window of VS Code navigate to the src folder and double click on the main.cpp file.
-3. Press F5 on the keyboard to compile and run the program.
+A real-time **falling-sand / cellular automata** simulation written in **C++** using **raylib**.  
+The project models simple material interactions such as gravity, fluid flow, fire spread, and combustion using a discrete grid.
 
-# What's changed
-The template now uses folders for better organizion of the files. So, all the source code now lives in the src folder.
 
-# Video Tutorial
+## Features
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="800">
-</p>
+- **Materials**
+  - Air
+  - Sand (falls, piles)
+  - Water (flows, spreads)
+  - Stone (static)
+  - Oil (flammable, flows)
+  - Fire (spreads, burns out)
 
-<p align="center">
-🎥 <a href="https://www.youtube.com/watch?v=PaAcVk5jUd8">Video Tutorial on YouTube</a>
-</p>
+- **Physics / Rules**
+  - Gravity & diagonal settling
+  - Fluid lateral spreading
+  - Fire propagation & lifetime decay
+  - Randomized scan order to reduce bias
 
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="http://www.programmingwithnick.com">My Website</a> | <br>
-</p>
+- **Interaction**
+  - Paint materials with mouse
+  - Adjustable brush size
+  - Pause / resume simulation
+  - Live material switching
+
+---
+
+## Controls
+
+| Input | Action |
+|-----|------|
+| **1** | Sand |
+| **2** | Water |
+| **3** | Stone |
+| **4** | Oil |
+| **5** | Fire |
+| **Left Click** | Place selected material |
+| **Right Click** | Erase (Air) |
+| **← / →** | Decrease / Increase brush size |
+| **Space** | Pause / Resume |
+
+---
+
+## Project Structure
+
