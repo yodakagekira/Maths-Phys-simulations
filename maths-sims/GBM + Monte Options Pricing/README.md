@@ -75,9 +75,3 @@ The implementation is intentionally lightweight and avoids external plotting lib
 - CSV export for offline analysis
 - Comparison with binomial tree pricing
 
-
-## Author
-
-Ahmad Abdullah  
-BSc Mathematics & Computer Science
-
